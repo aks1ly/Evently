@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap');
+
+// Кольори
+$font-color: #1F2A44;
+$body-color: #FFF8F3;
+$accent-color: #F26B5E;
+$light-accent: #FFE8DA;
+$card-color: #FFFFFF;
+
+// Розміри
+$width: 1440px;
+$header-height: 83px;
+$footer-height: 236px;
+
+// Шрифти
+$font-family: 'Onest', sans-serif;
+$font-size: 18px;
+$font-size-large: 20px;
+$font-size-small: 16px;
+$text-opacity: 0.7;
+
+// Розміри заголовків
+$h1-font-size: 50px;
+$h2-font-size: 24px;
+$h3-font-size: 20px;
+
+// Товщина шрифтів
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+
+// Відступи
+$margin-left: 50px;
+
+// Заокруглення
+$border-radius-small: 10px;
+$border-radius-medium: 15px;
+$border-radius-large: 20px;
+
+// Загальні стилі
+html {
+    font-size: $font-size;
+    color: $font-color;
+    background-color: #FFFFFF;
+    font-family: $font-family;
+}
+
+body {
+    width: 100%;
+    background-color: $body-color;
+    max-width: $width;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}

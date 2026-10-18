@@ -1,0 +1,32 @@
+.hero {
+    padding: 40px 0 0 $margin-left;
+
+    &__title {
+        font-size: $h1-font-size;
+        font-weight: $font-bold;
+        line-height: 1.2;
+        margin: 0;
+    }
+
+    &__accent {
+        color: $accent-color;
+    }
+
+    &__description {
+        font-size: $font-size-small;
+        font-weight: $font-medium;
+        max-width: 600px;
+        margin: 19px 0 31px;
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: $accent-color;
+        color: $card-color;
+        font-size: $font-size-large;
+        font-weight: $font-extrabold;
+        text-decoration: none;
+        padding: 20px 28px;
+        border-radius: $border-radius-medium;
+    }
+}

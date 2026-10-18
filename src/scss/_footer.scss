@@ -1,0 +1,114 @@
+.footer {
+    background-color: $light-accent;
+    color: $font-color;
+    width: 100%;
+
+    // Основний контейнер футера
+    &__container {
+        padding: 21px 21px 21px;
+        display: grid;
+        grid-template-columns: 1fr 180px 220px;
+        column-gap: 40px;
+        row-gap: 40px;
+    }
+
+    // Логотип і слоган
+    &__brand {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: $font-size-large;
+        font-weight: $font-bold;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__description {
+        font-size: $font-size-small;
+        font-weight: $font-semibold;
+        margin: 0;
+    }
+
+    // Колонка навігації
+    &__navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    // Колонка контактів
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    // Заголовки колонок
+    &__title {
+        color: $accent-color;
+        font-size: $font-size;
+        font-weight: $font-bold;
+        margin: 0 0 5px;
+    }
+
+    // Посилання навігації
+    &__link {
+        color: $font-color;
+        text-decoration: none;
+        font-size: $font-size-small;
+        font-weight: $font-semibold;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    // Контакти з іконками
+    &__contact {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $font-color;
+        text-decoration: none;
+        font-size: $font-size-small;
+        font-weight: $font-semibold;
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    // Іконки контактів
+    &__icon {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    // Нижній рядок футера
+    &__bottom {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $accent-color;
+        font-size: 12px;
+
+        p {
+            margin: 0;
+        }
+    }
+}
